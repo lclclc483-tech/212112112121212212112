@@ -21,8 +21,10 @@ from aiogram.types import (
 
 # ----------------------------------------------------
 # НАСТРОЙКИ И КОНФИГУРАЦИЯ
-# ----------------------------------------------------
-BOT_TOKEN = "8865522560:AAGm1P2IHdjBgZ8N_gt9aYd_GNaoJKBgb40"
+import os
+
+# Код считывает токен из настроек сервера
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 ADMIN_ID = 7211484627
 DB_NAME = "marketplace.db"
 
